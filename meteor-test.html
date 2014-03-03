@@ -1,0 +1,18 @@
+<head>
+    <meta charset="utf-8" />
+    <title>Iron Router Test</title>
+</head>
+
+<body>
+    {{> yield}}
+</body>
+
+<template name="home">
+    <h1>Hello world!</h1>
+    <a href="{{pathFor 'explorer'}}">Explorer</a>
+</template>
+
+<template name="explorer">
+  <h1>Welcome user!</h1>
+  <a href="{{pathFor 'home'}}">Home</a>
+</template>
